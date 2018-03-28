@@ -1,9 +1,11 @@
 package com.payconiq;
 
-import java.util.Map;
+import java.util.Collection;
 
 public interface StockService {
     Stock getStockById(long id);
 
-    Map<Long, Stock> getStockList();
+    Collection<Stock> getStockList();
+
+    void addStock(long id, Stock stock);
 }
